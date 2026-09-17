@@ -118,6 +118,7 @@
 
   /* all three */
   .all{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 var(--m);background:#000 !important;color:#fff;--cw:200px}
+  .all .ttl{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:3vh}
   .all .rows{width:100%}
   .all .blk{margin-bottom:3vh}
   .all .blk:last-child{margin-bottom:0}
@@ -164,7 +165,8 @@
   <a data-go="intelligent">Intelligent</a>
   <a data-go="joyful">Joyful</a>
   <a data-go="vibrant">Vibrant</a>
-  <a data-go="all">All</a>
+  <a data-go="selected">Selected</a>
+  <a data-go="appendix">Appendix</a>
 </header>
 <main>
 
@@ -485,7 +487,8 @@
 </section>
 
 <!-- ALL -->
-<section class="all" id="all">
+<section class="all" id="selected">
+  <div class="ttl">Selected</div>
   <div class="rows">
     <div class="blk">
       <div class="hd"><a class="lnk" data-go="intelligent">Intelligent Driving <span>&rarr;</span></a></div>
@@ -493,14 +496,6 @@
       <div class="item rep" data-go="a1"><div class="frame"><video src="assets/A1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Precision Lane</span></div>
       <div class="item rep" data-go="a2"><div class="frame"><video src="assets/A2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Smart Thinking</span></div>
       <div class="item rep" data-go="a3"><div class="frame"><video src="assets/A3.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Smart Reveal</span></div>
-      <div class="item var" data-go="a1"><div class="frame"><video src="assets/var/A1_1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a1"><div class="frame"><video src="assets/var/A1_6.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a2"><div class="frame"><video src="assets/var/A2_1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a2"><div class="frame"><video src="assets/var/A2_3.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a2"><div class="frame"><video src="assets/var/A2_4.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a3"><div class="frame"><video src="assets/var/A3_2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a3"><div class="frame"><video src="assets/var/A3_5.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
-      <div class="item var" data-go="a3"><div class="frame"><video src="assets/var/A3_6.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
       </div>
     </div>
     <div class="blk">
@@ -508,6 +503,35 @@
       <div class="row">
       <div class="item rep" data-go="b1"><div class="frame"><video src="assets/B1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Bouncy Road</span></div>
       <div class="item rep" data-go="b2"><div class="frame"><video src="assets/B2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Smooth Drive</span></div>
+      </div>
+    </div>
+    <div class="blk">
+      <div class="hd"><a class="lnk" data-go="vibrant">Vibrant Driving <span>&rarr;</span></a></div>
+      <div class="row">
+      <div class="item rep" data-go="c1"><div class="frame"><video src="assets/C1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Fast Lane</span></div>
+      <div class="item rep" data-go="c2"><div class="frame"><video src="assets/C2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Young Luxe</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="all" id="appendix">
+  <div class="ttl">Appendix</div>
+  <div class="rows">
+    <div class="blk">
+      <div class="hd"><a class="lnk" data-go="intelligent">Intelligent Driving <span>&rarr;</span></a></div>
+      <div class="row">
+      <div class="item var" data-go="a1"><div class="frame"><video src="assets/var/A1_1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      <div class="item var" data-go="a1"><div class="frame"><video src="assets/var/A1_6.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      <div class="item var" data-go="a2"><div class="frame"><video src="assets/var/A2_1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      <div class="item var" data-go="a2"><div class="frame"><video src="assets/var/A2_3.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      <div class="item var" data-go="a2"><div class="frame"><video src="assets/var/A2_4.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      <div class="item var" data-go="a3"><div class="frame"><video src="assets/var/A3_2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      <div class="item var" data-go="a3"><div class="frame"><video src="assets/var/A3_5.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
+      </div>
+    </div>
+    <div class="blk">
+      <div class="hd"><a class="lnk" data-go="joyful">Joyful Driving <span>&rarr;</span></a></div>
+      <div class="row">
       <div class="item var" data-go="b1"><div class="frame"><video src="assets/var/B1_2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
       <div class="item var" data-go="b2"><div class="frame"><video src="assets/var/B2_3.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
       <div class="item var" data-go="b2"><div class="frame"><video src="assets/var/B2_5.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
@@ -516,8 +540,6 @@
     <div class="blk">
       <div class="hd"><a class="lnk" data-go="vibrant">Vibrant Driving <span>&rarr;</span></a></div>
       <div class="row">
-      <div class="item rep" data-go="c1"><div class="frame"><video src="assets/C1.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Fast Lane</span></div>
-      <div class="item rep" data-go="c2"><div class="frame"><video src="assets/C2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Young Luxe</span></div>
       <div class="item var" data-go="c2"><div class="frame"><video src="assets/var/C2_2.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
       <div class="item var" data-go="c2"><div class="frame"><video src="assets/var/C2_3.mp4" muted loop playsinline preload="metadata"></video></div><span class="small">Appendix</span></div>
       </div>
@@ -553,10 +575,10 @@
     var used=sec.querySelector('.in').getBoundingClientRect().height+sec.querySelector('.rl').getBoundingClientRect().height+12;
     var avail=innerHeight*0.82-used, w=layer.clientWidth;
     var h=Math.max(80,Math.min(avail,(w-6*(n-1))/n*9/16)); Array.prototype.forEach.call(cells.children,function(c){ c.style.height=h+'px'; c.style.width=(h*16/9)+'px'; }); }); }
-  function sizeAll(){ var sec=document.querySelector('.all'); if(!sec) return; var W=sec.clientWidth-2*parseFloat(getComputedStyle(sec).paddingLeft), availH=innerHeight*0.86, gap=10;
+  function sizeAll(){ document.querySelectorAll('.all').forEach(function(sec){ var W=sec.clientWidth-2*parseFloat(getComputedStyle(sec).paddingLeft), availH=innerHeight*0.86-sec.querySelector('.ttl').getBoundingClientRect().height-24, gap=10;
     var blks=[].slice.call(sec.querySelectorAll('.blk')); var best=120;
     for(var cw=360;cw>=120;cw-=4){ var H=0; blks.forEach(function(b){ var n=b.querySelectorAll('.item').length, cols=Math.max(1,Math.floor((W+gap)/(cw+gap))), lines=Math.ceil(n/cols); H+=b.querySelector('.hd').getBoundingClientRect().height+14+lines*(cw*9/16+gap+24)+28; }); if(H<=availH){best=cw;break} }
-    sec.style.setProperty('--cw',best+'px'); }
+    sec.style.setProperty('--cw',best+'px'); }); }
   function sizeVars(){ document.querySelectorAll('.vars').forEach(function(sec){ var grid=sec.querySelector('.grid'), n=grid.children.length, cols=+sec.dataset.cols, rows=Math.ceil(n/cols);
     var gap=innerWidth*(sec.classList.contains('appx')?0.005:0.01), W=sec.clientWidth-2*parseFloat(getComputedStyle(sec).paddingLeft), availH=innerHeight*0.78-sec.querySelector('.vl').getBoundingClientRect().height;
     var cw=Math.min((W-gap*(cols-1))/cols, ((availH-gap*(rows-1))/rows)*16/9); if(cols===1) cw=Math.min(cw, innerWidth*0.6);
@@ -581,7 +603,7 @@
   var nav=document.getElementById('nav'); var navMap={intelligent:['a1','a2','a3'],joyful:['b1','b2'],vibrant:['c1','c2']};
   function updateNav(){ var el=secs[i]; if(!el) return; nav.classList.toggle('show', i>=2); var dark=el.matches('.vars,.all')||el.classList.contains('d'); nav.classList.toggle('inv',dark);
     var id=el.id||''; var prev=el; while(prev&&!prev.id) prev=prev.previousElementSibling; id=prev?prev.id:'';
-    var act=null; for(var k in navMap){ if(k===id||navMap[k].indexOf(id)>=0) act=k; } if(id==='all') act='all';
+    var act=null; for(var k in navMap){ if(k===id||navMap[k].indexOf(id)>=0) act=k; } if(id==='selected'||id==='appendix') act=id;
     nav.querySelectorAll('a').forEach(function(a){ a.classList.toggle('on',a.dataset.go===act); }); }
   function updateVideos(){ updateNav(); secs.forEach(function(el,n){ var near=Math.abs(n-i)<=1; el.querySelectorAll('video').forEach(function(v){ if(near){ if(v.paused&&!v.closest('.focus')) v.play().catch(function(){}); } else { if(!v.paused) v.pause(); } }); }); }
   updateVideos(); window.addEventListener('scroll',function(){ sync(); updateVideos(); },{passive:true});
